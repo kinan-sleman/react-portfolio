@@ -1,0 +1,181 @@
+/* 
+==============================
+Table of content
+==============================
+
+1. Header Design
+2. Button & Icons
+3. Modal & Pop up
+4. Light Mode
+5. Responsive Design (Media Query)
+
+*/
+
+/* 
+==============================
+1. Header Design
+==============================
+*/
+header.flex {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+
+header.flex nav {
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.4rem;
+    border-radius: 55px;
+    box-shadow: 2px 2px 20px var(--subtitle);
+}
+
+header.flex ul.flex {
+    gap: 16px;
+}
+
+header.flex ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: .88rem;
+    font-weight: 500;
+}
+
+header.flex ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: .90rem;
+}
+
+header.flex button {
+    font-size: 1.2rem;
+}
+
+header.flex button.menu {
+    display: none;
+}
+
+/* 
+==============================
+2. Button & Icons
+==============================
+*/
+header button.icon-menu,
+header button.mode {
+    background-color: var(--bgHeader);
+    color: var(--subtitle);
+    width: 2.4rem;
+    height: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(102, 92, 91, 0.349);
+    transition: .2s all;
+}
+header button.icon-menu:hover,
+header button.mode:hover {
+    color: var(--title);
+    border: 1px solid rgba(102, 92, 91, 0.712);
+    
+}
+
+header .icon-close {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    transition: .3s all;
+}
+header .icon-close:hover {
+    font-size: 1.4rem;
+    color: crimson;
+    rotate: 180deg;
+}
+
+/* 
+==============================
+3. Modal & Pop up
+==============================
+*/
+
+header.flex .fixed {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: rgba(64, 64, 66, 0.781);
+    backdrop-filter: blur(4px);
+}
+
+header.flex .fixed ul.modal {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    animation: myMove .4s 1;
+}
+
+header.flex .fixed ul.modal li {
+    border-bottom: 1px solid var(--border);
+    padding-top: .5rem;
+    padding-bottom: .77rem;
+}
+
+header.flex .fixed ul.modal li:first-child {
+    margin-bottom: -1rem;
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: .2rem;
+}
+
+
+header.flex .fixed ul.modal li:last-child {
+    border: none;
+}
+
+
+/* 
+==============================
+4. Light Mode
+==============================
+*/
+
+.light .icon-sun {
+    color: orange;
+    box-shadow: 1px 1px 40px rgba(84, 84, 88, 0.329);
+}
+.light .mode:hover {
+    box-shadow: 1px 1px 40px rgb(229, 229, 235) inset;
+}
+
+/* 
+==============================
+5. Responsive Design (Media Query)
+==============================
+*/
+
+@keyframes myMove {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    header.flex nav {
+        display: none;
+    }
+
+    header.flex button.menu {
+        display: block;
+    }
+
+}
