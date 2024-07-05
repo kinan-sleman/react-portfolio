@@ -20,6 +20,7 @@ footer.flex {
 
 footer ul.flex {
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 footer ul.flex a {
