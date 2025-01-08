@@ -30,14 +30,14 @@ export default function Main() {
           onClick={() => handleClick("css")}
           className={currentActive === "css" ? "active" : null}
         >
-          HTML & CSS
+          HTML & CSS 
         </button>
-        <button
+        {/* <button
           onClick={() => handleClick("JS")}
           className={currentActive === "JS" ? "active" : null}
         >
           JavaScript
-        </button>
+        </button> */}
         <button
           onClick={() => handleClick("react")}
           className={currentActive === "react" ? "active" : null}
@@ -45,10 +45,16 @@ export default function Main() {
           React & MUI
         </button>
         <button
-          onClick={() => handleClick("node")}
-          className={currentActive === "node" ? "active" : null}
+          onClick={() => handleClick("vue")}
+          className={currentActive === "vue" ? "active" : null}
         >
-          Node & Express
+          Vue
+        </button>
+        <button
+          onClick={() => handleClick("company_tasks")}
+          className={currentActive === "company_tasks" ? "active" : null}
+        >
+          Compony Tasks
         </button>
       </section>
       <section className="right-section flex">
@@ -61,7 +67,7 @@ export default function Main() {
                 animate={{ transform: "scale(1)" }}
                 transition={{ type: "spring", damping: 8, stiffness: 100 }}
                 key={item.imgPath}
-                href=""
+                href={item.link}
                 target="_blank"
               >
                 <article className="card">
@@ -71,12 +77,13 @@ export default function Main() {
                     <p className="sub-title">{item.description}</p>
                     <div className="icons flex" style={{ gap: "11px" }}>
                       <div className="flex">
+                        <a href={item.link} target="_blank">
                         <div className="icon-link"></div>
-                        <div className="icon-github"></div>
+                        </a>
                       </div>
-                      <a className="flex link" href="">
-                        more <span className="icon-arrow-right"></span>
-                      </a>
+                        <a href={item.githubURL} target="_blank">
+                          <div className="icon-github"></div>
+                        </a>
                     </div>
                   </div>
                 </article>

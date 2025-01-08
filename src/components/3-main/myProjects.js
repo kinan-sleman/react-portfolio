@@ -1,46 +1,42 @@
 export const myProjects = [
   {
-    title: "React Project",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-                    maxime illum similique, perferendis adipisci optio, placeat
-                    corrupti quasi nihil rerum iste repellendus est ducimus
-                    voluptatem ipsum quae cum exercitationem quisquam!`,
-    category: ["react", "react"],
-    imgPath: "./1.jpg",
-    githubURL: "./1.jpg",
-    link: "./1.jpg",
+    title: "Doctor Nibras",
+    description: `This portfolio is designed to doctor Nibras and created by HTML, CSS, and JavaScript.`,
+    category: ["css","company_tasks"],
+    imgPath: "./doctor-nibras.png",
+    githubURL: "https://github.com/kinan-sleman/Doctor-Alogaidi",
+    link: "https://kinan-sleman.github.io/Doctor-Alogaidi/",
   },
   {
-    title: "CSS Project",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-                    maxime illum similique, perferendis adipisci optio, placeat
-                    corrupti quasi nihil rerum iste repellendus est ducimus
-                    voluptatem ipsum quae cum exercitationem quisquam!`,
-    category: ["css", "react"],
-    imgPath: "./2.jpg",
-    githubURL: "./2.jpg",
-    link: "./2.jpg",
+    title: "Giphy Search app",
+    description: `This app is designed to search for GIFs and copy their URLs for use in various projects. It streamlines the process of finding, selecting, and sharing animated images, making it quick and efficient for users.`,
+    category: ["vue"],
+    imgPath: "./giphy.png",
+    githubURL: "https://github.com/kinan-sleman/giphy-api",
+    link: "https://kinan-sleman.github.io/giphy-api/",
   },
   {
-    title: "JS Project",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-                    maxime illum similique, perferendis adipisci optio, placeat
-                    corrupti quasi nihil rerum iste repellendus est ducimus
-                    voluptatem ipsum quae cum exercitationem quisquam!`,
-    category: ["JS", "react"],
-    imgPath: "./3.jpg",
-    githubURL: "./3.jpg",
-    link: "./3.jpg",
+    title: "Todo List app",
+    description: `This Vue and Vuex-based app is designed to manage a to-do list. It allows users to add, edit, and delete tasks efficiently while maintaining state management.`,
+    category: ["vue"],
+    imgPath: "./todoVue.png",
+    githubURL: "https://github.com/kinan-sleman/vuejs-todo-list",
+    link: "https://kinan-sleman.github.io/vuejs-todo-list/",
   },
   {
-    title: "Node Project",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-                    maxime illum similique, perferendis adipisci optio, placeat
-                    corrupti quasi nihil rerum iste repellendus est ducimus
-                    voluptatem ipsum quae cum exercitationem quisquam!`,
-    category: ["node", "react"],
-    imgPath: "./4.jpg",
-    githubURL: "./4.jpg",
-    link: "./4.jpg",
+    title: "Nexcent",
+    description: `Nexcent is a page that created to Oona Tech company by Typescript , React js , Tailwind CSS , and farmer animation .`,
+    category: ["company_tasks","react"],
+    imgPath: "./nexcent.png",
+    githubURL: "https://github.com/kinan-sleman/nexcent",
+    link: "https://kinan-sleman.github.io/nexcent/",
+  },
+  {
+    title: "Oona Tech Website",
+    description: `This is the main Website for Oona Tech company that created by React.js, TypeScript, Redux Toolkit and Tailwind CSS`,
+    category: ["react"],
+    imgPath: "./Oona Tech Website.png",
+    githubURL: "https://github.com/kinan-sleman/oona-tech-website",
+    link: "https://66e2699c2adcdce22ea0d140--papaya-empanada-e4fd4d.netlify.app/",
   },
 ];
