@@ -42,7 +42,7 @@ export default function Main() {
           onClick={() => handleClick("react")}
           className={currentActive === "react" ? "active" : null}
         >
-          React & MUI
+          React & Tailwind
         </button>
         <button
           onClick={() => handleClick("vue")}
