@@ -44,12 +44,12 @@ export default function Main() {
         >
           React & Tailwind
         </button>
-        <button
-          onClick={() => handleClick("vue")}
-          className={currentActive === "vue" ? "active" : null}
-        >
-          Vue
-        </button>
+        {/* <button */}
+        {/*   onClick={() => handleClick("vue")} */}
+        {/*   className={currentActive === "vue" ? "active" : null} */}
+        {/* > */}
+        {/*   Vue */}
+        {/* </button> */}
         <button
           onClick={() => handleClick("company_tasks")}
           className={currentActive === "company_tasks" ? "active" : null}
