@@ -33,6 +33,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                className={errors.email ? "error" : ""}
                 {...register("email", {
                   required: "Email Is Required",
                   pattern: {
@@ -55,6 +56,7 @@ export default function Contact() {
             <div>
               <textarea
                 id="message"
+                className={errors.message ? "error" : ""}
                 {...register("message", { required: "Message Is Required" })}
               ></textarea>
               {errors.message && <p className="validation-error">{errors.message.message}</p>}
