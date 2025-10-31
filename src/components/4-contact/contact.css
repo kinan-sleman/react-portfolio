@@ -50,6 +50,15 @@ section.contact-us form>div>label {
     color: var(--subtitle);
 }
 
+section.contact-us form>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section.contact-us form>div>div>p {
+    color: #ff4d4d;
+}
+
 section.contact-us input,
 section.contact-us textarea {
     all: unset;

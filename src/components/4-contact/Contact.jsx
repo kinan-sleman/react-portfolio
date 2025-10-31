@@ -1,11 +1,19 @@
-import React from "react";
 import "./contact.css";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm as useFormspree, ValidationError } from "@formspree/react";
+import { useForm as useHookForm } from "react-hook-form";
 import Lottie from "lottie-react";
 import doneAnimation from "../../animation/done.json";
 import contactAnimation from "../../animation/contact.json";
 export default function Contact() {
-  const [state, handleSubmit] = useForm("mrbzgoeb");
+  const [state, formspreeHandleSubmit] = useFormspree("mrbzgoeb");
+  const {
+    register,
+    handleSubmit: hookFormHandleSubmit,
+    formState: { errors }
+  } = useHookForm();
+  const onSubmit = (data) => {
+    formspreeHandleSubmit(data);
+  };
   return (
     <section className="contact-us">
       <h1 className=" title">
@@ -17,24 +25,46 @@ export default function Contact() {
         something new
       </p>
       <div style={{ justifyContent: "space-between" }} className=" flex">
-        <form onSubmit={handleSubmit} className="" action="">
+        <form onSubmit={hookFormHandleSubmit(onSubmit)} className="" action="">
           <div>
             <label htmlFor="email">Email Address: </label>
-            <input required type="email" name="email" id="email" />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
+            <div>
+
+              <input
+                type="email"
+                id="email"
+                {...register("email", {
+                  required: "Email Is Required",
+                  pattern: {
+
+                    value: /^\S+@\S+$/i,
+                    message: "Email syntax is invalid"
+                  }
+                })}
+              />
+              {errors.email && <p className="validation-error">{errors.email.message}</p>}
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
           </div>
           <div>
             <label htmlFor="message">Your message: </label>
-            <textarea required name="message" id="message"></textarea>
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
+            <div>
+              <textarea
+                id="message"
+                {...register("message", { required: "Message Is Required" })}
+              ></textarea>
+              {errors.message && <p className="validation-error">{errors.message.message}</p>}
+
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </div>
           </div>
           <button className="submit" type="submit" disabled={state.submitting}>
             {state.submitting ? "Submitting ..." : "Submit"}

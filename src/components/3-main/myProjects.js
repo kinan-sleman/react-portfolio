@@ -71,14 +71,6 @@ export const myProjects = [
     githubURL: "https://github.com/kinan-sleman/movie-finder",
     link: "https://movie-finder-50.netlify.app",
   },
-  {
-    title: "Hostpress",
-    description: `A modern, responsive hosting website designed for GLMA Company, showcasing advanced React.js features with TailwindCSS for styling, AOS for scroll animations, and Framer Motion for smooth transitions. This project demonstrates best practices in modern web development while providing an intuitive user experience.`,
-    category: ["react", "company_tasks"],
-    imgPath: "./hostpress.png",
-    githubURL: "https://github.com/kinan-sleman/glma-test",
-    link: "https://hostpress-50.netlify.app",
-  },
   // {
   //   title: "Oona Tech Website",
   //   description: `This is the main Website for Oona Tech company that created by React.js, TypeScript, Redux Toolkit and Tailwind CSS`,
