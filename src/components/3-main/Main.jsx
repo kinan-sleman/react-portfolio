@@ -48,7 +48,7 @@ export default function Main() {
            onClick={() => handleClick("nest")}
            className={currentActive === "nest" ? "active" : null}
          >
-           Nest.js
+           Nest JS
          </button>
         <button
           onClick={() => handleClick("company_tasks")}
