@@ -23,6 +23,14 @@ export const myProjects = [
     githubURL: "https://github.com/kinan-sleman/front-end-test",
     link: "https://front-end-test50.netlify.app/",
   },
+  {
+    title: "NestJS Blog API",
+    description: `A scalable backend for a blogging platform built with NestJS and TypeScript. Features user authentication (JWT), articles management (CRUD), personalized feeds, and profile interactions (follow/unfollow).`,
+    category: ["nest"],
+    imgPath: "./nest-blog.png",
+    githubURL: "https://github.com/kinan-sleman/nestjs-crashcourse",
+    link: "https://nest-blog-production-0709.up.railway.app/api#/",
+  },
   // {
   //   title: "Giphy Search app",
   //   description: `This app is designed to search for GIFs and copy their URLs for use in various projects. It streamlines the process of finding, selecting, and sharing animated images, making it quick and efficient for users.`,
