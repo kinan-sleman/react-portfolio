@@ -27,7 +27,7 @@ export default function Hero() {
           Full Stack Developer, founder ,and amateur programmer.
         </motion.h1>
         <p className="subtitle">
-          I'm Kinan, a Front-end developer with extensive experience in developing
+          I'm Kinan, a Full Stack Developer with extensive experience in developing
           business applications. My skills include project management, software
           development, and user documentation.
         </p>
