@@ -24,7 +24,7 @@ export default function Hero() {
           transition={{ duration: 2 }}
           className="title"
         >
-          Front-end developer, founder ,and amateur programmer.
+          Full Stack Developer, founder ,and amateur programmer.
         </motion.h1>
         <p className="subtitle">
           I'm Kinan, a Front-end developer with extensive experience in developing
