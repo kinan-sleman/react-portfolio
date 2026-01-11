@@ -79,6 +79,14 @@ export const myProjects = [
     githubURL: "https://github.com/kinan-sleman/movie-finder",
     link: "https://movie-finder-50.netlify.app",
   },
+  {
+    title: "Feedback Loop",
+    description: `A high-performance, real-time feedback management platform built with Next.js 16, MongoDB, and Ably Websockets. Features a sleek design system with Dark Mode, and instant user interaction.`,
+    category: ["next"],
+    imgPath: "./feedback-loop.png",
+    githubURL: "https://github.com/kinan-sleman/feedback-loop",
+    link: "https://feedback-loop-orpin.vercel.app",
+  },
   // {
   //   title: "Oona Tech Website",
   //   description: `This is the main Website for Oona Tech company that created by React.js, TypeScript, Redux Toolkit and Tailwind CSS`,
