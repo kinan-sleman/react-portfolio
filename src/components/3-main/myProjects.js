@@ -31,6 +31,14 @@ export const myProjects = [
     githubURL: "https://github.com/kinan-sleman/nestjs-crashcourse",
     link: "https://nest-blog-production-0709.up.railway.app/api#/",
   },
+  {
+    title: "Payload Next Blog",
+    description: `A Full-stack Blog built with Next.js and Payload CMS. Features a headless dashboard for managing Articles, Authors, and Media, integrated with PostgreSQL and Cloudinary for a seamless editorial workflow.`,
+    category: ["next"],
+    imgPath: "./payload-next-blog.png",
+    githubURL: "https://github.com/kinan-sleman/payload-next-blog",
+    link: "https://payload-next-blog-pi.vercel.app/admin",
+  },
   // {
   //   title: "Giphy Search app",
   //   description: `This app is designed to search for GIFs and copy their URLs for use in various projects. It streamlines the process of finding, selecting, and sharing animated images, making it quick and efficient for users.`,
