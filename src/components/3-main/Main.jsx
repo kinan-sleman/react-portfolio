@@ -27,10 +27,10 @@ export default function Main() {
           All Projects
         </button>
         <button
-          onClick={() => handleClick("css")}
-          className={currentActive === "css" ? "active" : null}
+          onClick={() => handleClick("html_css_js")}
+          className={currentActive === "html_css_js" ? "active" : null}
         >
-          HTML & CSS 
+          Vanilla Web
         </button>
         {/* <button
           onClick={() => handleClick("JS")}

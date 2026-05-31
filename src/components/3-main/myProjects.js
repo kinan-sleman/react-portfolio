@@ -1,8 +1,16 @@
 export const myProjects = [
   {
+    title: "GEO-STREAM",
+    description: "A high-performance global live radio engine built with HTML, pure CSS, and vanilla JavaScript. Integrates Leaflet.js and MarkerCluster for a highly responsive dark-mode interactive map interface, allowing real-time global audio streaming.",
+    category: ["html_css_js"],
+    imgPath: "./meta-image.png",
+    githubURL: "https://github.com/kinan-sleman/Live-Radio-",
+    link: "https://kinan-sleman.github.io/Live-Radio-/html/index.html",
+  },
+  {
     title: "Doctor Nibras",
     description: `A modern medical portfolio website for Dr. Nibras, built with HTML, CSS, and JavaScript. Features a clean, professional design with responsive layouts and smooth animations.`,
-    category: ["css", "company_tasks"],
+    category: ["html_css_js", "company_tasks"],
     imgPath: "./doctor-nibras.png",
     githubURL: "https://github.com/kinan-sleman/Doctor-Alogaidi",
     link: "https://kinan-sleman.github.io/Doctor-Alogaidi/",
@@ -10,7 +18,7 @@ export const myProjects = [
   {
     title: "Leon Template",
     description: `A sleek, responsive landing page template built with HTML and CSS. Features modern design elements, smooth animations, and a fully responsive layout.`,
-    category: ["css"],
+    category: ["html_css_js"],
     imgPath: "./leon-template.png",
     githubURL: "https://github.com/kinan-sleman/Leon-Template",
     link: "https://kinan-sleman.github.io/Leon-Template/",
@@ -18,7 +26,7 @@ export const myProjects = [
   {
     title: "Front-end Test",
     description: `A comprehensive front-end test for BookSMM Company, built with React.js and pure CSS. Features a modern UI with interactive components and responsive design.`,
-    category: ["css", "react", "company_tasks"],
+    category: ["html_css_js", "react", "company_tasks"],
     imgPath: "./front-end-test.png",
     githubURL: "https://github.com/kinan-sleman/front-end-test",
     link: "https://front-end-test50.netlify.app/",
