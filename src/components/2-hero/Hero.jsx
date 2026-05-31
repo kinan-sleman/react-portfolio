@@ -50,7 +50,7 @@ export default function Hero() {
           ></a>
           <a
             className="icon icon-linkedin"
-            href="https://www.linkedin.com/in/kinan-sleman-a0a08a36a/"
+            href="https://www.linkedin.com/in/kenan-sleman-1ab889404/"
             target="_blank"
           ></a>
         </div>
